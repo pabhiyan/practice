@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website Home</title>
+  <style>
+    /* ======== General Styles ======== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* ======== Navigation Bar ======== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 4px;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    /* ======== Slider Section ======== */
+    .slider {
+      margin-top: 60px; /* to avoid overlap with navbar */
+      position: relative;
+      max-width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* ======== Page Content ======== */
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .content h2 {
+      color: #333;
+    }
+
+    .content p {
+      color: #555;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    /* ======== Footer ======== */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======== Navigation Bar ======== -->
+  <div class="navbar">
+    <div class="logo">MyWebsite</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- ======== Image Slider ======== -->
+  <div class="slider">
+    <div class="slides">
+      <img src="https://picsum.photos/1200/400?random=1" alt="Slide 1">
+      <img src="https://picsum.photos/1200/400?random=2" alt="Slide 2">
+      <img src="https://picsum.photos/1200/400?random=3" alt="Slide 3">
+    </div>
+  </div>
+
+  <!-- ======== Page Content ======== -->
+  <div class="content">
+    <h2>Welcome to My Website</h2>
+    <p>
+      This is a simple homepage layout with a navigation bar at the top and a smooth image slider.
+      You can customize this design easily for your own project or website.
+    </p>
+  </div>
+
+  <!-- ======== Footer ======== -->
+  <footer>
+    &copy; 2025 MyWebsite | All Rights Reserved
+  </footer>
+
+</body>
+</html>
