@@ -1,4 +1,4 @@
-#this is my practice project#
+#this is my practice project
 
 git status
 git add .(if single file please provide file name)
